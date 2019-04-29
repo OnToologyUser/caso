@@ -1,6 +1,6 @@
 # casoo
 
-Context Aware System Observation Ontology  
+Context Aware System Observation ontology 
 
 ----
 
