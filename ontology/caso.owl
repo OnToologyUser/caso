@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3id.org/def/caso/"
-     xml:base="http://www.w3id.org/def/caso/"
+<rdf:RDF xmlns="http://www.w3id.org/def/caso#"
+     xml:base="http://www.w3id.org/def/caso"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:saref="https://w3id.org/saref#"
@@ -19,14 +19,14 @@
      xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sosa="http://www.w3.org/ns/sosa/">
-    <owl:Ontology rdf:about="http://www.w3id.org/def/caso/">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/def/1.0/caso/"/>
+    <owl:Ontology rdf:about="http://www.w3id.org/def/caso#">
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/1.0/caso"/>
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
         <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
-        <rdfs:comment xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</rdfs:comment>
+        <dc:description xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</dc:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
         <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
