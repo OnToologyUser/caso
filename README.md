@@ -1,12 +1,12 @@
-# casoo
+# caso
 
 Context Aware System Observation ontology 
 
 ----
 
-**Name**: casoo  
-**URL**: <https://w3id.org/def/casoo#>  
-**Link to**: <https://github.com/Irstea/casoo>  
+**Name**: caso  
+**URL**: <https://w3id.org/def/caso#>  
+**Link to**: <https://github.com/Irstea/caso>  
 
 ### Contact:  
 Catherine ROUSSEY <catherine.roussey@irstea.fr>   
