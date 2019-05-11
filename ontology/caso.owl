@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3id.org/def/caso#"
-     xml:base="http://www.w3id.org/def/caso"
+     xml:base="http://www.w3id.org/def/caso#"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:saref="https://w3id.org/saref#"
@@ -9,9 +9,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ssn="http://www.w3.org/ns/ssn/"
      xmlns:saref4agri="https://w3id.org/def/saref4agri#"
+     xmlns:caso="http://www.w3id.org/def/caso##"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:caso="http://www.w3id.org/def/caso#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -20,17 +20,17 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sosa="http://www.w3.org/ns/sosa/">
     <owl:Ontology rdf:about="http://www.w3id.org/def/caso#">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/def/1.0/caso"/>
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/caso#/201905"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
+        <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
+        <dc:description xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</dc:description>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
-        <dc:description xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</dc:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
-        <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/def/caso#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/def/caso##</vann:preferredNamespaceUri>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
         <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
     </owl:Ontology>
@@ -46,6 +46,20 @@
      -->
 
     
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
