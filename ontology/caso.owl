@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3id.org/def/caso#"
-     xml:base="http://www.w3id.org/def/caso#"
+<rdf:RDF xmlns="http://www.w3id.org/def/caso"
+     xml:base="http://www.w3id.org/def/caso"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:saref="https://w3id.org/saref#"
@@ -8,8 +8,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ssn="http://www.w3.org/ns/ssn/"
-     xmlns:saref4agri="https://w3id.org/def/saref4agri#"
-     xmlns:caso="http://www.w3id.org/def/caso##"
+     xmlns:caso="http://www.w3id.org/def/caso#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -19,8 +18,8 @@
      xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sosa="http://www.w3.org/ns/sosa/">
-    <owl:Ontology rdf:about="http://www.w3id.org/def/caso#">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/def/caso#/201905"/>
+    <owl:Ontology rdf:about="http://www.w3id.org/def/caso">
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/caso/201905"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
@@ -30,7 +29,7 @@
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
-        <vann:preferredNamespaceUri>https://w3id.org/def/caso##</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/def/caso#</vann:preferredNamespaceUri>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
         <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
     </owl:Ontology>
@@ -357,13 +356,21 @@
     
 
 
+    <!-- https://w3id.org/saref#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#consistsOf"/>
+    
+
+
     <!-- https://w3id.org/saref#hasCommand -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/saref#hasCommand">
         <owl:inverseOf rdf:resource="https://w3id.org/saref#isCommandOf"/>
         <rdfs:comment>A relationship between an entity (such as a function) and a command</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between an entity (such as a function) and a command</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label>has command</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has command</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -372,8 +379,10 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/saref#hasFunction">
         <rdfs:comment>A relationship identifying the type of function of a device</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship identifying the type of function of a device</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label>has function</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has function</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -382,8 +391,10 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/saref#isCommandOf">
         <rdfs:comment>A relationship between a command and a function.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between a command and a function.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label>is command of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is command of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -427,6 +438,24 @@
         <rdfs:comment xml:lang="en">numeric value of a boundary</rdfs:comment>
         <rdfs:label xml:lang="en">boundary value</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/saref#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saref#hasDescription"/>
+    
+
+
+    <!-- https://w3id.org/saref#hasManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saref#hasManufacturer"/>
+    
+
+
+    <!-- https://w3id.org/saref#hasModel -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saref#hasModel"/>
     
 
 
@@ -806,6 +835,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
 
     <owl:Class rdf:about="https://w3id.org/saref#Actuator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device responsible for moving or controlling a mechanism or system by performing an actuating function</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label xml:lang="en">Actuator</rdfs:label>
     </owl:Class>
@@ -822,6 +852,12 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
                 <owl:onClass rdf:resource="https://w3id.org/saref#Function"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasDescription"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A directive that a device must support to perform a certain function. A command may act upon a state, but does not necessarily act upon a state. For example, the ON command acts upon the ON/OFF state, but the GET command does not act upon any state, it simply gives a directive to retrieve a certain value. We propose here a list of commands that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
         <rdfs:label>Command</rdfs:label>
     </owl:Class>
@@ -832,6 +868,38 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
 
     <owl:Class rdf:about="https://w3id.org/saref#Device">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#consistsOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasFunction"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/saref#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasDescription"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasManufacturer"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasModel"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device&apos;s user vs. the point of view of the device&apos;s manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label xml:lang="en">Device</rdfs:label>
     </owl:Class>
@@ -848,9 +916,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
                 <owl:onClass rdf:resource="https://w3id.org/saref#Command"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one function. Functions can be structured in categories (subclasses) that reflect different points of view, for example, considering the specific application area for which a function can be used (e.g., light, temperature, motion, heat, power, etc.), or the capability that a function can support (e.g., receive, reply, notify, etc.), and so forth.</rdfs:comment>
-        <rdfs:comment>The functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one function. Functions can be structured in categories (subclasses) that reflect different points of view, for example, considering the specific application area for which a function can be used (e.g., light, temperature, motion, heat, power, etc.), or the capability that a function can support (e.g., receive, reply, notify, etc.), and so forth. </rdfs:comment>
-        <rdfs:label>Function</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one function. Functions can be structured in categories (subclasses) that reflect different points of view, for example, considering the specific application area for which a function can be used (e.g., light, temperature, motion, heat, power, etc.), or the capability that a function can support (e.g., receive, reply, notify, etc.), and so forth. </rdfs:comment>
         <rdfs:label xml:lang="en">Function</rdfs:label>
     </owl:Class>
     
@@ -860,6 +926,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
 
     <owl:Class rdf:about="https://w3id.org/saref#Sensor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. Further, a device of category saref:Sensor that performs a saref:SensingFunction.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
     </owl:Class>
