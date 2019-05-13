@@ -563,6 +563,18 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Feature Of Interest</rdfs:label>
@@ -658,7 +670,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</rdfs:comment>
         <rdfs:comment xml:lang="en">Observation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
@@ -811,7 +822,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device responsible for moving or controlling a mechanism or system by performing an actuating function</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
-        <rdfs:label xml:lang="en">Actuator</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Actuator</rdfs:label>
     </owl:Class>
     
 
@@ -865,7 +876,7 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. Further, a device of category saref:Sensor that performs a saref:SensingFunction.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
-        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor</rdfs:label>
     </owl:Class>
     
 
