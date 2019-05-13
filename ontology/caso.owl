@@ -88,6 +88,16 @@
     
 
 
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+        <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">This property links an entity to a om:Unit instance.</rdfs:comment>
+        <rdfs:label>has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
@@ -138,6 +148,12 @@
         <rdfs:label xml:lang="en">has result</rdfs:label>
         <skos:definition xml:lang="en">Relation linking an Observation or Actuation or act of Sampling and a Result or Sample.</skos:definition>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hosts"/>
     
 
 
@@ -390,6 +406,15 @@
     
 
 
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
+        <rdfs:comment xml:lang="en">This property links an entity to a numerical value.</rdfs:comment>
+        <rdfs:label xml:lang="en">has numerical value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.w3.org/ns/sosa/hasSimpleResult -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/hasSimpleResult">
@@ -438,6 +463,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
+        <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unit</rdfs:label>
+    </owl:Class>
     
 
 
@@ -675,6 +709,24 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:label xml:lang="en">Observation</rdfs:label>
         <skos:definition xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</skos:definition>
         <skos:example xml:lang="en">The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Platform -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">Platform</rdfs:label>
+        <skos:definition xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</skos:definition>
+        <skos:example xml:lang="en">A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</skos:example>
     </owl:Class>
     
 
