@@ -125,7 +125,6 @@
         <rdfs:comment xml:lang="en">Relation between an Actuation and the property of a FeatureOfInterest it is acting upon.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">acts on property</rdfs:label>
-        <skos:definition xml:lang="en">Relation between an Actuation and the property of a FeatureOfInterest it is acting upon.</skos:definition>
         <skos:example xml:lang="en">In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. </skos:example>
     </owl:ObjectProperty>
     
@@ -143,7 +142,6 @@
         <rdfs:comment xml:lang="en">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
-        <skos:definition xml:lang="en">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</skos:definition>
         <skos:example xml:lang="en">For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.</skos:example>
     </owl:ObjectProperty>
     
@@ -162,7 +160,6 @@
         <rdfs:comment xml:lang="en">Relation linking an Observation or Actuation or act of Sampling and a Result or Sample.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">has result</rdfs:label>
-        <skos:definition xml:lang="en">Relation linking an Observation or Actuation or act of Sampling and a Result or Sample.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -177,7 +174,6 @@
         <rdfs:comment xml:lang="en">Relation between a FeatureOfInterest and the Sample used to represent it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">has sample</rdfs:label>
-        <skos:definition xml:lang="en">Relation between a FeatureOfInterest and the Sample used to represent it.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -194,7 +190,6 @@
         <rdfs:comment xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">hosts</rdfs:label>
-        <skos:definition xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -207,7 +202,6 @@
         <rdfs:comment xml:lang="en">Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is acted on by</rdfs:label>
-        <skos:definition xml:lang="en">Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state.</skos:definition>
         <skos:example xml:lang="en">In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. </skos:example>
     </owl:ObjectProperty>
     
@@ -224,7 +218,6 @@
         <rdfs:comment xml:lang="en">A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is feature of interest of</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -240,7 +233,6 @@
         <rdfs:comment xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is hosted by</rdfs:label>
-        <skos:definition xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -254,7 +246,6 @@
         <rdfs:comment xml:lang="en">Relation between an ObservableProperty and the Sensor able to observe it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is observed by</rdfs:label>
-        <skos:definition xml:lang="en">Relation between an ObservableProperty and the Sensor able to observe it.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -270,7 +261,6 @@
         <rdfs:comment xml:lang="en">Relation linking a Result to the Observation or Actuation or act of Sampling that created or caused it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is result of</rdfs:label>
-        <skos:definition xml:lang="en">Relation linking a Result to the Observation or Actuation or act of Sampling that created or caused it.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -284,7 +274,6 @@
         <rdfs:comment xml:lang="en">Relation from a Sample to the FeatureOfInterest that it is intended to be representative of.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">is sample of</rdfs:label>
-        <skos:definition xml:lang="en">Relation from a Sample to the FeatureOfInterest that it is intended to be representative of.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -298,7 +287,6 @@
         <rdfs:comment xml:lang="en">Relation between an Actuator and the Actuation it has made.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made actuation</rdfs:label>
-        <skos:definition xml:lang="en">Relation between an Actuator and the Actuation it has made.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -311,7 +299,6 @@
         <rdfs:comment xml:lang="en">Relation linking an Actuation to the Actuator that made that Actuation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made by actuator</rdfs:label>
-        <skos:definition xml:lang="en">Relation linking an Actuation to the Actuator that made that Actuation.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -325,7 +312,6 @@
         <rdfs:comment xml:lang="en">Relation between an Observation and the Sensor which made the Observation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made by sensor</rdfs:label>
-        <skos:definition xml:lang="en">Relation between an Observation and the Sensor which made the Observation.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -338,7 +324,6 @@
         <rdfs:comment xml:lang="en">Relation between a Sensor and an Observation made by the Sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">made observation</rdfs:label>
-        <skos:definition xml:lang="en">Relation between a Sensor and an Observation made by the Sensor.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -351,7 +336,6 @@
         <rdfs:comment xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">observed property</rdfs:label>
-        <skos:definition xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -364,7 +348,6 @@
         <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">observes</rdfs:label>
-        <skos:definition xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -379,7 +362,6 @@
         <rdfs:comment xml:lang="en">The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">phenomenon time</rdfs:label>
-        <skos:definition xml:lang="en">The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -391,7 +373,6 @@
         <rdfs:comment xml:lang="en">Relation between an entity and a Property of that entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">has property</rdfs:label>
-        <skos:definition xml:lang="en">Relation between an entity and a Property of that entity.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -402,7 +383,6 @@
         <rdfs:comment xml:lang="en">Relation between a Property and the entity it belongs to.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">is property of</rdfs:label>
-        <skos:definition xml:lang="en">Relation between a Property and the entity it belongs to.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -550,10 +530,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/saref#hasCommand">
         <owl:inverseOf rdf:resource="https://w3id.org/saref#isCommandOf"/>
-        <rdfs:comment>A relationship between an entity (such as a function) and a command</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between an entity (such as a function) and a command</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
-        <rdfs:label>has command</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has command</rdfs:label>
     </owl:ObjectProperty>
     
@@ -562,10 +540,8 @@
     <!-- https://w3id.org/saref#hasFunction -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/saref#hasFunction">
-        <rdfs:comment>A relationship identifying the type of function of a device</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship identifying the type of function of a device</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
-        <rdfs:label>has function</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has function</rdfs:label>
     </owl:ObjectProperty>
     
@@ -609,7 +585,6 @@
         <rdfs:comment xml:lang="en">The simple value of an Observation or Actuation or act of Sampling.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">has simple result</rdfs:label>
-        <skos:definition xml:lang="en">The simple value of an Observation or Actuation or act of Sampling.</skos:definition>
         <skos:example xml:lang="en">For instance, the values 23 or true.</skos:example>
     </owl:DatatypeProperty>
     
@@ -625,7 +600,6 @@
         <rdfs:comment xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">result time</rdfs:label>
-        <skos:definition xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -682,7 +656,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">A temporal interval or instant.</rdfs:comment>
         <rdfs:isDefinedBy>http://www.w3.org/2006/time#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Temporal entity</rdfs:label>
-        <skos:definition xml:lang="en">A temporal interval or instant.</skos:definition>
     </owl:Class>
     
 
@@ -694,7 +667,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">An actuatable quality (property, characteristic) of a FeatureOfInterest.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Actuatable Property</rdfs:label>
-        <skos:definition xml:lang="en">An actuatable quality (property, characteristic) of a FeatureOfInterest.</skos:definition>
         <skos:example xml:lang="en">A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty.</skos:example>
     </owl:Class>
     
@@ -760,7 +732,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Actuation</rdfs:label>
-        <skos:definition xml:lang="en">An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator.</skos:definition>
         <skos:example xml:lang="en">The activity of automatically closing a window if the temperature in a room drops below 20 degree Celsius. The activity is the Actuation and the device that closes the window is the Actuator. The Procedure is the rule, plan, or specification that defines the conditions that triggers the Actuation, here a drop in temperature. </skos:example>
     </owl:Class>
     
@@ -773,7 +744,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Actuator</rdfs:label>
-        <skos:definition xml:lang="en">A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world.</skos:definition>
         <skos:example xml:lang="en">A window actuator for automatic window control, i.e., opening or closing the window.</skos:example>
     </owl:Class>
     
@@ -797,7 +767,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Feature Of Interest</rdfs:label>
-        <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</skos:definition>
         <skos:example xml:lang="en">When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</skos:example>
     </owl:Class>
     
@@ -820,7 +789,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">An observable quality (property, characteristic) of a FeatureOfInterest.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Observable Property</rdfs:label>
-        <skos:definition xml:lang="en">An observable quality (property, characteristic) of a FeatureOfInterest.</skos:definition>
         <skos:example xml:lang="en">The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.</skos:example>
     </owl:Class>
     
@@ -892,7 +860,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">Observation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
-        <skos:definition xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</skos:definition>
         <skos:example xml:lang="en">The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.</skos:example>
     </owl:Class>
     
@@ -910,7 +877,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Platform</rdfs:label>
-        <skos:definition xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</skos:definition>
         <skos:example xml:lang="en">A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</skos:example>
     </owl:Class>
     
@@ -922,7 +888,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:comment xml:lang="en">The Result of an Observation, Actuation, or act of Sampling. To store an observation&apos;s simple result value one can use the hasSimpleResult property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Result</rdfs:label>
-        <skos:definition xml:lang="en">The Result of an Observation, Actuation, or act of Sampling. To store an observation&apos;s simple result value one can use the hasSimpleResult property.</skos:definition>
         <skos:example xml:lang="en">The value 20 as the height of a certain tree together with the unit, e.g., Meter.</skos:example>
     </owl:Class>
     
@@ -953,7 +918,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
 A Sample is intended to sample some FatureOfInterest, so there is an expectation of at least one isSampleOf property. However, in some cases the identity, and even the exact type, of the sampled feature may not be known when observations are made using the sampling features.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Sample</rdfs:label>
-        <skos:definition xml:lang="en">Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made.</skos:definition>
         <skos:example xml:lang="en">A &apos;station&apos; is essentially an identifiable locality where a sensor system or Procedure may be deployed and an observation made. In the context of the observation model, it connotes the &apos;world in the vicinity of the station&apos;, so the observed properties relate to the physical medium at the station, and not to any physical artifact such as a mooring, buoy, benchmark, monument, well, etc.</skos:example>
         <skos:example xml:lang="en">A statistical sample is often designed to be characteristic of an entire population, so that observations can be made regarding the sample that provide a good estimate of the properties of the population.</skos:example>
         <skos:note xml:lang="en">A transient sample, such as a ships-track or flight-line, might be identified and described, but is unlikely to be revisited exactly.</skos:note>
@@ -968,7 +932,6 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:comment xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
-        <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</skos:definition>
         <skos:example xml:lang="en">Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</skos:example>
     </owl:Class>
     
@@ -980,7 +943,6 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
         <rdfs:comment xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
         <rdfs:label xml:lang="en">Property</rdfs:label>
-        <skos:definition xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</skos:definition>
     </owl:Class>
     
 
