@@ -298,20 +298,18 @@
 # 
 # http://www.w3id.org/def/caso#greaterThan
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/def/caso#lesserThan> .
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/def/caso#lesserThanOrEqualTo> .
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
-<http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a caso:State and another caso:State. The first State is greater than the second State in the sense of qualitative or chronological."@en .
+<http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#comment> "greater than - Relation between States to define an order. The domain State is greater than the range State."@en .
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#label> "greater than"@en .
 # 
 # http://www.w3id.org/def/caso#greaterThanOrEqualTo
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/def/caso#lesserThan> .
-<http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/def/caso#lesserThanOrEqualTo> .
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
-<http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a caso:State and another caso:State. The first State is greater than or equal to the second State in the sense of qualitative or chronological."@en .
+<http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#comment> "greater than or equal to - Relation between States to define an order. The domain State is greater than or equal to the range State."@en .
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#label> "greater than or equal to"@en .
 # 
 # http://www.w3id.org/def/caso#hasClosedLowerBoundary
@@ -319,7 +317,7 @@
 <http://www.w3id.org/def/caso#hasClosedLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://www.w3id.org/def/caso#hasClosedLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#hasClosedLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#Boundary> .
-<http://www.w3id.org/def/caso#hasClosedLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation linking a caso:State and a caso:Boundary. The caso:Boundary contains a value representing an lower boundary of a state. An entity is at this state when its considering value is superior or equal to the lower boundary value."@en .
+<http://www.w3id.org/def/caso#hasClosedLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "has closed lower boundary - Relation from a State to its lower Boundary. The State is reached when the associated state value is equal or superior to the lower Boundary value."@en .
 <http://www.w3id.org/def/caso#hasClosedLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "has closed lower boundary"@en .
 # 
 # http://www.w3id.org/def/caso#hasClosedUpperBoundary
@@ -327,7 +325,7 @@
 <http://www.w3id.org/def/caso#hasClosedUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://www.w3id.org/def/caso#hasClosedUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#hasClosedUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#Boundary> .
-<http://www.w3id.org/def/caso#hasClosedUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation linking a caso:State and a caso:Boundary. The caso:Boundary contains a value representing an upper boundary of a state. An entity is at this state when its considering value is inferior or equal to the upper boundary value."@en .
+<http://www.w3id.org/def/caso#hasClosedUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "has closed upper boundary - Relation from a State to its upper Boundary. The State is reached when the associated state value is equal or inferior  to the upper Boundary value."@en .
 <http://www.w3id.org/def/caso#hasClosedUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "has closed upper boundary"@en .
 # 
 # http://www.w3id.org/def/caso#hasOpenLowerBoundary
@@ -335,7 +333,7 @@
 <http://www.w3id.org/def/caso#hasOpenLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://www.w3id.org/def/caso#hasOpenLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#hasOpenLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#Boundary> .
-<http://www.w3id.org/def/caso#hasOpenLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation linking a caso:State and a caso:Boundary. The caso:Boundary contains a value representing an lower boundary of a state. An entity is at this state when its considering value is superior to the lower boundary value."@en .
+<http://www.w3id.org/def/caso#hasOpenLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "has open lower boundary - Relation from a State to its lower Boundary. The State is reached when the associated state value is superior to the lower Boundary value."@en .
 <http://www.w3id.org/def/caso#hasOpenLowerBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "has open lower boundary"@en .
 # 
 # http://www.w3id.org/def/caso#hasOpenUpperBoundary
@@ -343,7 +341,7 @@
 <http://www.w3id.org/def/caso#hasOpenUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://www.w3id.org/def/caso#hasOpenUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#hasOpenUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#Boundary> .
-<http://www.w3id.org/def/caso#hasOpenUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation linking a caso:State and a caso:Boundary. The caso:Boundary contains a value representing an upper boundary of a state. An entity is at this state when its considering value is inferior to the upper boundary value."@en .
+<http://www.w3id.org/def/caso#hasOpenUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "has open upper boundary - Relation from a State to its upper Boundary. The State is reached when the associated state value is inferior to the upper Boundary value."@en .
 <http://www.w3id.org/def/caso#hasOpenUpperBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "has open upper boundary"@en .
 # 
 # http://www.w3id.org/def/caso#hasResultState
@@ -351,42 +349,42 @@
 <http://www.w3id.org/def/caso#hasResultState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/sosa/hasResult> .
 <http://www.w3id.org/def/caso#hasResultState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#Deduction> .
 <http://www.w3id.org/def/caso#hasResultState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
-<http://www.w3id.org/def/caso#hasResultState> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a caso:Deduction and a caso:State. The caso:Deduction has a result in the form of a  caso:State."@en .
+<http://www.w3id.org/def/caso#hasResultState> <http://www.w3.org/2000/01/rdf-schema#comment> "has state result - Relation linking a Deduction and its result that is to say the State that is applied on the Property for a time."@en .
 <http://www.w3id.org/def/caso#hasResultState> <http://www.w3.org/2000/01/rdf-schema#label> "has result state"@en .
 # 
 # http://www.w3id.org/def/caso#hasState
 <http://www.w3id.org/def/caso#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/def/caso#hasState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#Property> .
 <http://www.w3id.org/def/caso#hasState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
-<http://www.w3id.org/def/caso#hasState> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a caso:Property and caso:State of the Property"@en .
+<http://www.w3id.org/def/caso#hasState> <http://www.w3.org/2000/01/rdf-schema#comment> "has state - Relation from a Property to one of the possible States of that Property"@en .
 <http://www.w3id.org/def/caso#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "has state"@en .
 # 
 # http://www.w3id.org/def/caso#hasValidTime
 <http://www.w3id.org/def/caso#hasValidTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/def/caso#hasValidTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#Deduction> .
 <http://www.w3id.org/def/caso#hasValidTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalEntity> .
-<http://www.w3id.org/def/caso#hasValidTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A deduction links an entity to a state during this temporal entity. A temporal entity could be an interval or an instant depending of the use-case."@en .
+<http://www.w3id.org/def/caso#hasValidTime> <http://www.w3.org/2000/01/rdf-schema#comment> "has valid time - The time that the result of a Deduction (state) applies to the ObservableProperty. Not necessarily the same as the sosa:PhenomenonTime or the sosa:ResultTime. May be an Interval or an Instant, or some other compound TemporalEntity."@en .
 <http://www.w3id.org/def/caso#hasValidTime> <http://www.w3.org/2000/01/rdf-schema#label> "has valid time"@en .
 # 
 # http://www.w3id.org/def/caso#lesserThan
 <http://www.w3id.org/def/caso#lesserThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/def/caso#lesserThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#lesserThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
-<http://www.w3id.org/def/caso#lesserThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a caso:State and another caso:State. The first State is lesser than the second State in the sense of qualitative or chronological."@en .
+<http://www.w3id.org/def/caso#lesserThan> <http://www.w3.org/2000/01/rdf-schema#comment> "less than - Relation between States to define an order. The domain State is lesser than the range State."@en .
 <http://www.w3id.org/def/caso#lesserThan> <http://www.w3.org/2000/01/rdf-schema#label> "lesser than"@en .
 # 
 # http://www.w3id.org/def/caso#lesserThanOrEqualTo
 <http://www.w3id.org/def/caso#lesserThanOrEqualTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/def/caso#lesserThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#lesserThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
-<http://www.w3id.org/def/caso#lesserThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a caso:State and another caso:State. The first State is lesser than or equal to the second State in the sense of qualitative or chronological."@en .
+<http://www.w3id.org/def/caso#lesserThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#comment> "lesser than or equal to - Relation between States to define an order. The domain State is lesser than or equal to the range State."@en .
 <http://www.w3id.org/def/caso#lesserThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#label> "lesser than or equal to"@en .
 # 
 # http://www.w3id.org/def/caso#triggersFunction
 <http://www.w3id.org/def/caso#triggersFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/def/caso#triggersFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#Actuation> .
 <http://www.w3id.org/def/caso#triggersFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Function> .
-<http://www.w3id.org/def/caso#triggersFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a caso:Actuation and a saref:Function. The caso:Actuation trigger the operation of a saref:Function."@en .
+<http://www.w3id.org/def/caso#triggersFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "triggers function - Relation from an Actuation to a Function. The Actuation trigger the operation of the Function."@en .
 <http://www.w3id.org/def/caso#triggersFunction> <http://www.w3.org/2000/01/rdf-schema#label> "triggers function"@en .
 # 
 # https://w3id.org/saref#hasCommand
@@ -446,7 +444,7 @@
 # http://www.w3id.org/def/caso#boundaryValue
 <http://www.w3id.org/def/caso#boundaryValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.w3id.org/def/caso#boundaryValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#Boundary> .
-<http://www.w3id.org/def/caso#boundaryValue> <http://www.w3.org/2000/01/rdf-schema#comment> "numeric value of a boundary"@en .
+<http://www.w3id.org/def/caso#boundaryValue> <http://www.w3.org/2000/01/rdf-schema#comment> "boundary value - Numeric value of a Boundary"@en .
 <http://www.w3id.org/def/caso#boundaryValue> <http://www.w3.org/2000/01/rdf-schema#label> "boundary value"@en .
 # 
 # 
@@ -683,36 +681,36 @@ _:genid26 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org
 # http://www.w3id.org/def/caso#Actuation
 <http://www.w3id.org/def/caso#Actuation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/def/caso#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Actuation> .
-<http://www.w3id.org/def/caso#Actuation> <http://www.w3.org/2000/01/rdf-schema#comment> "Actuation is an action that a machine or device operate."@en .
+<http://www.w3id.org/def/caso#Actuation> <http://www.w3.org/2000/01/rdf-schema#comment> "Actuation - Act of carrying out an (Actuation) Procedure to change the state of world  using an Actuator. This act is performed during the context exploitation phase of a context aware system. An Actuation links to an Actuator to describe what made the Actuation and how; links to an ActuatableProperty to describe the target that the Actuation change; links to a FeatureOfInterest to detail what that property was associated with; links to a Deduction by the wasInfluencedBy property when the act is performed based on the given Deduction; and links to the Function that is triggered by the Actuation by the triggersFunction property."@en .
 <http://www.w3id.org/def/caso#Actuation> <http://www.w3.org/2000/01/rdf-schema#label> "Actuation"@en .
 # 
 # http://www.w3id.org/def/caso#Boundary
 <http://www.w3id.org/def/caso#Boundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3id.org/def/caso#Boundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Boundary is the limits that the State can be defined when satisfy such limits."@en .
+<http://www.w3id.org/def/caso#Boundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Boundary - Limit of a State. The value of the limit could be a quantitative or a qualitative data. To store the value, the boundaryValue data property is used."@en .
 <http://www.w3id.org/def/caso#Boundary> <http://www.w3.org/2000/01/rdf-schema#label> "Boundary"@en .
 # 
 # http://www.w3id.org/def/caso#Deduction
 <http://www.w3id.org/def/caso#Deduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/def/caso#Deduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/caso#Observation> .
-<http://www.w3id.org/def/caso#Deduction> <http://www.w3.org/2000/01/rdf-schema#comment> "The result of an inference that links together a property, a state of the property and a specific time period."@en .
+<http://www.w3id.org/def/caso#Deduction> <http://www.w3.org/2000/01/rdf-schema#comment> "Deduction - Act of carrying out an (Observation) Procedure to estimate the State of a Property of a FeatureOfInterest. The Observation may be performed by an inference engine. A Deduction links to a State by the hasResultState property to describe what the result is; links to a TemporalEntity by the hasValidTime property to indicate when the result is valid and for how many time."@en .
 <http://www.w3id.org/def/caso#Deduction> <http://www.w3.org/2000/01/rdf-schema#label> "Deduction"@en .
 # 
 # http://www.w3id.org/def/caso#Observation
 <http://www.w3id.org/def/caso#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/def/caso#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
-<http://www.w3id.org/def/caso#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observation is the action of observing or considering something."@en .
+<http://www.w3id.org/def/caso#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of a Property of a FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. An Observation links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of; and links to a FeatureOfInterest to detail what that property was associated with. When the act is made during the context processing phase the entry values of the procedure should be linked to the observation by the wasDerivedFrom property."@en .
 <http://www.w3id.org/def/caso#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
 # 
 # http://www.w3id.org/def/caso#Property
 <http://www.w3id.org/def/caso#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/def/caso#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
-<http://www.w3id.org/def/caso#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Property is an atrribute of a thing that can be used to characterize the thing."@en .
+<http://www.w3id.org/def/caso#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Property - A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.The possible quality values should be expressed by State. A Property is linked to its possible States using the hasState property."@en .
 <http://www.w3id.org/def/caso#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
 # 
 # http://www.w3id.org/def/caso#State
 <http://www.w3id.org/def/caso#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/def/caso#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.w3id.org/def/caso#State> <http://www.w3.org/2000/01/rdf-schema#comment> "A qualitative data which changes over time, summarizing a set of information."@en .
+<http://www.w3id.org/def/caso#State> <http://www.w3.org/2000/01/rdf-schema#comment> "State - A qualitative value of a Property, summarizing a set of information about that Property. A State links to its Property by the isStateOf property. To delimit the State of a Property, some Boundary may be defined."@en .
 <http://www.w3id.org/def/caso#State> <http://www.w3.org/2000/01/rdf-schema#label> "State"@en .
 # 
 # https://w3id.org/saref#Actuator
