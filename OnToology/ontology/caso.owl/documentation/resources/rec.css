@@ -62,7 +62,10 @@ p.copyright small { font-size: small }
 a[href]:hover { background: #ffa }
 }
 
-pre { margin-left: 2em }
+pre { 
+	margin-left: 2em;
+	word-wrap:break-word;
+}
 /*
 p {
   margin-top: 0.6em;
@@ -72,7 +75,10 @@ p {
 dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
 dt { font-weight: bold }
 
-pre, code { font-family: monospace } /* navigator 4 requires this */
+pre, code { 
+	font-family: monospace; 
+	word-wrap:break-word;
+} /* navigator 4 requires this */
 
 ul.toc, ol.toc {
   list-style: disc;		/* Mac NS has problem with 'none' */
@@ -84,5 +90,8 @@ ul.toc, ol.toc {
   .hide { speak: none }
   p.copyright { volume: x-soft; speech-rate: x-fast }
   dt { pause-before: 20% }
-  pre { speak-punctuation: code } 
+  pre { 
+		speak-punctuation: code;
+		word-wrap:break-word;
+	} 
 }
