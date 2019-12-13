@@ -431,7 +431,6 @@
     <!-- http://www.w3id.org/def/caso#greaterThan -->
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/def/caso#greaterThan">
-        <owl:inverseOf rdf:resource="http://www.w3id.org/def/caso#lesserThanOrEqualTo"/>
         <rdfs:domain rdf:resource="http://www.w3id.org/def/caso#State"/>
         <rdfs:range rdf:resource="http://www.w3id.org/def/caso#State"/>
         <rdfs:comment xml:lang="en">greater than - Relation between States to define an order. The domain State is greater than the range State.</rdfs:comment>
@@ -443,7 +442,6 @@
     <!-- http://www.w3id.org/def/caso#greaterThanOrEqualTo -->
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/def/caso#greaterThanOrEqualTo">
-        <owl:inverseOf rdf:resource="http://www.w3id.org/def/caso#lesserThan"/>
         <rdfs:domain rdf:resource="http://www.w3id.org/def/caso#State"/>
         <rdfs:range rdf:resource="http://www.w3id.org/def/caso#State"/>
         <rdfs:comment xml:lang="en">greater than or equal to - Relation between States to define an order. The domain State is greater than or equal to the range State.</rdfs:comment>
