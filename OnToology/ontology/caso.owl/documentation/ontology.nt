@@ -1,5 +1,5 @@
 <http://www.w3id.org/def/caso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3id.org/def/caso> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/def/caso/201905> .
+<http://www.w3id.org/def/caso> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/def/caso/201912> .
 <http://www.w3id.org/def/caso> <http://purl.org/dc/elements/1.1/description> "CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context."@en .
 <http://www.w3id.org/def/caso> <http://purl.org/dc/elements/1.1/publisher> <https://www.irstea.fr/en/research/research-units/tscf> .
 <http://www.w3id.org/def/caso> <http://purl.org/dc/elements/1.1/title> "Context Aware System Observation Ontology"@en .
@@ -11,7 +11,7 @@
 <http://www.w3id.org/def/caso> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <http://www.w3id.org/def/caso> <http://purl.org/vocab/vann/preferredNamespacePrefix> "caso" .
 <http://www.w3id.org/def/caso> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/caso#" .
-<http://www.w3id.org/def/caso> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<http://www.w3id.org/def/caso> <http://www.w3.org/2002/07/owl#versionInfo> "1.2.0" .
 # 
 # 
 # #################################################################
@@ -60,6 +60,18 @@
 # http://www.w3.org/2004/02/skos/core#note
 <http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/ns/prov#category
+<http://www.w3.org/ns/prov#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#component
+<http://www.w3.org/ns/prov#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#inverse
+<http://www.w3.org/ns/prov#inverse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#qualifiedForm
+<http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -75,15 +87,28 @@
 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an entity to a om:Unit instance."@en .
 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit" .
 # 
-# http://www.w3.org/ns/prov#wasDerivedFrom
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "was derived from"@en .
+# http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#comment> "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity."@en .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#label> "used" .
 # 
 # http://www.w3.org/ns/prov#wasInfluencedBy
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."@en .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was influence by"@en .
+# 
+# http://www.w3.org/ns/prov#wasInformedBy
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."@en .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasInformedBy" .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#inverse> "informed" .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Communication> .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#qualifiedCommunication> .
 # 
 # http://www.w3.org/ns/sosa/actsOnProperty
 <http://www.w3.org/ns/sosa/actsOnProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -278,7 +303,6 @@
 # 
 # http://www.w3id.org/def/caso#greaterThan
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/def/caso#lesserThanOrEqualTo> .
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#greaterThan> <http://www.w3.org/2000/01/rdf-schema#comment> "greater than - Relation between States to define an order. The domain State is greater than the range State."@en .
@@ -286,7 +310,6 @@
 # 
 # http://www.w3id.org/def/caso#greaterThanOrEqualTo
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/def/caso#lesserThan> .
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/caso#State> .
 <http://www.w3id.org/def/caso#greaterThanOrEqualTo> <http://www.w3.org/2000/01/rdf-schema#comment> "greater than or equal to - Relation between States to define an order. The domain State is greater than or equal to the range State."@en .

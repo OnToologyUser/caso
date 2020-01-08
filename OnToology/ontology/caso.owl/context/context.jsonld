@@ -76,6 +76,9 @@
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     },
+    "component" : {
+      "@id" : "http://www.w3.org/ns/prov#component"
+    },
     "Result" : {
       "@id" : "http://www.w3.org/ns/sosa/Result"
     },
@@ -89,6 +92,10 @@
     },
     "hasCommand" : {
       "@id" : "https://w3id.org/saref#hasCommand",
+      "@type" : "@id"
+    },
+    "used" : {
+      "@id" : "http://www.w3.org/ns/prov#used",
       "@type" : "@id"
     },
     "Boundary" : {
@@ -136,10 +143,6 @@
       "@id" : "http://www.w3id.org/def/caso#hasClosedLowerBoundary",
       "@type" : "@id"
     },
-    "wasDerivedFrom" : {
-      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
-      "@type" : "@id"
-    },
     "rangeIncludes" : {
       "@id" : "http://schema.org/rangeIncludes"
     },
@@ -155,6 +158,9 @@
     },
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "inverse" : {
+      "@id" : "http://www.w3.org/ns/prov#inverse"
     },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
@@ -232,8 +238,15 @@
     "State" : {
       "@id" : "http://www.w3id.org/def/caso#State"
     },
+    "wasInformedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasInformedBy",
+      "@type" : "@id"
+    },
     "Sample" : {
       "@id" : "http://www.w3.org/ns/sosa/Sample"
+    },
+    "category" : {
+      "@id" : "http://www.w3.org/ns/prov#category"
     },
     "Function" : {
       "@id" : "https://w3id.org/saref#Function"
@@ -256,6 +269,9 @@
     },
     "System" : {
       "@id" : "http://www.w3.org/ns/ssn/System"
+    },
+    "qualifiedForm" : {
+      "@id" : "http://www.w3.org/ns/prov#qualifiedForm"
     },
     "Device" : {
       "@id" : "https://w3id.org/saref#Device"
