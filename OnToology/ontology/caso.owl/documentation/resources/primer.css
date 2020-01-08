@@ -48,7 +48,6 @@ div.fssyntax pre, div.rdfxml pre, div.owlxml pre, div.turtle pre, div.manchester
   padding: 1em;
   clear: both;
   margin-left: 0em;
-	word-wrap:break-word;
 }
 /* Expansion to add the status*/
 .status {
