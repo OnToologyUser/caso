@@ -19,12 +19,12 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sosa="http://www.w3.org/ns/sosa/">
     <owl:Ontology rdf:about="http://www.w3id.org/def/caso">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/def/caso/201905"/>
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/caso/201912"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
         <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
-        <owl:versionInfo>1.1.0</owl:versionInfo>
+        <owl:versionInfo>1.2.0</owl:versionInfo>
         <dc:description xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</dc:description>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
