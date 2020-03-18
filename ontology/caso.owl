@@ -26,9 +26,9 @@
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
         <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
         <dc:description xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</dc:description>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7011-4535"/>
         <vann:preferredNamespaceUri>https://w3id.org/def/caso#</vann:preferredNamespaceUri>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
         <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
