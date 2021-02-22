@@ -1,37 +1,40 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3id.org/def/caso"
      xml:base="http://www.w3id.org/def/caso"
-     xmlns:schema="http://schema.org/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:saref="https://w3id.org/saref#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ssn="http://www.w3.org/ns/ssn/"
-     xmlns:caso="http://www.w3id.org/def/caso#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:caso="http://www.w3id.org/def/caso#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:sosa="http://www.w3.org/ns/sosa/">
+     xmlns:saref="https://w3id.org/saref#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://www.w3id.org/def/caso">
         <owl:versionIRI rdf:resource="http://www.w3id.org/def/caso/201912"/>
-        <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
-        <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
-        <owl:versionInfo>1.2.0</owl:versionInfo>
-        <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
-        <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
         <dc:description xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</dc:description>
-        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7011-4535"/>
-        <vann:preferredNamespaceUri>https://w3id.org/def/caso#</vann:preferredNamespaceUri>
-        <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-18T15:04:00+01:00</dc:modified>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-01T15:04:00+01:00</dc:modified>
         <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
+        <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7011-4535"/>
+        <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/def/caso#</vann:preferredNamespaceUri>
+        <rdfs:comment>http://www.w3id.org/def/caso</rdfs:comment>
+        <owl:versionInfo>1.2.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -44,6 +47,66 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -1147,5 +1210,5 @@ A Sample is intended to sample some FatureOfInterest, so there is an expectation
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
