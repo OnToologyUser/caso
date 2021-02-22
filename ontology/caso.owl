@@ -32,7 +32,7 @@
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <vann:preferredNamespacePrefix>caso</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/def/caso#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https//w3id.org/def/caso#</vann:preferredNamespaceUri>
         <rdfs:comment>http://www.w3id.org/def/caso</rdfs:comment>
         <owl:versionInfo>1.2.0</owl:versionInfo>
     </owl:Ontology>
