@@ -21,9 +21,9 @@
     <owl:Ontology rdf:about="http://www.w3id.org/def/caso">
         <owl:versionIRI rdf:resource="http://www.w3id.org/def/caso/201912"/>
         <dc:description xml:lang="en">CASO (Context Aware System Observation) is an ontology for context aware system and observation services. Its goal is to describe all the processing of the context.</dc:description>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-18T15:04:00+01:00</dc:issued>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-01T15:04:00+01:00</dc:modified>
-        <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-26-11T00:00:00+01:00</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-01T00:00:00+01:00</dc:modified>
+        <dc:publisher rdf:resource="https://www6.clermont.inrae.fr/tscf"/>
         <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-7011-4535"/>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
