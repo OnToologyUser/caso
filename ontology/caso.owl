@@ -26,7 +26,7 @@
         <dc:publisher rdf:resource="https://www6.clermont.inrae.fr/tscf"/>
         <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-7011-4535"/>
-        <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0421-452X"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
