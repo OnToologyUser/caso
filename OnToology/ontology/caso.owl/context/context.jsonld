@@ -27,6 +27,9 @@
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
+    "issued" : {
+      "@id" : "http://purl.org/dc/elements/1.1/issued"
+    },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     },
@@ -210,6 +213,9 @@
     "hasFeatureOfInterest" : {
       "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
       "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/elements/1.1/modified"
     },
     "observedProperty" : {
       "@id" : "http://www.w3.org/ns/sosa/observedProperty",
